@@ -12,7 +12,7 @@ Tento projekt vznikl jako analytický report pro vizualizaci ekonomických dat. 
 ---
 
 ## Struktura reportu 
-Report je rozdělen do **4 logických stránek**:
+Report je rozdělen do **4 stránek**:
 
 1. **Hlavní přehled ČR:** 
    * Souhrnné KPI karty (Průměrné HDP, Průměrná cena potravin, Průměrná mzda).
