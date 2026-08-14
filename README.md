@@ -30,11 +30,10 @@ Report je rozdělen do **4 stránek**:
 
 ## Použité technologie a funkce Power BI
 * **Rozsah:** 4 stránky.
-* **Typy vizuálů (5+):** Vodorovné pruhové grafy, spojnicové grafy, maticové tabulky (Matrix), dlaždicové průřezy (Slicers) a KPI karty.
-* **Propojení tabulek:** Vytvořený robustní datový model propojující primární česká makrodata se sekundární mezinárodní datovou sadou.
+* **Typy vizuálů:** Vodorovné pruhové grafy, spojnicové grafy, maticové tabulky (Matrix), dlaždicové průřezy (Slicers) a KPI karty.
+* **Propojení tabulek:** Vytvořený datový model propojující primární česká makrodata se sekundární mezinárodní datovou sadou.
 * **Dato-modelářské prvky:** Využití kalkulovaných měr (Measures), agregací a hierarchické struktury dat (kategorie potravin / roky).
 * **Interaktivita:** Křížové filtrování (Cross-filtering/highlighting) mezi tabulkami a grafy, dynamické průřezy let.
-* **Vizuální stránka:** Jednotný, moderní a čistý designový styl (Executive design v tmavých, profesionálních tónech).
 
 ---
 
