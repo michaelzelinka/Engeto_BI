@@ -1,44 +1,44 @@
-# Engeto_BI
+Engeto_BI
+Makroekonomický přehled ČR a mezinárodní srovnání (2006–2018)
 
-# Makroekonomický přehled ČR a mezinárodní srovnání (2006–2018)
+Interaktivní Power BI dashboard analyzující makroekonomický vývoj v České republice v letech 2006–2018, zaměřený na mzdy podle odvětví, vývoj cen potravin, reálnou kupní sílu obyvatelstva a mezinárodní srovnání HDP evropských států.
 
-Komplexní Power BI dashboard analyzující makroekonomický vývoj v České republice v letech **2006–2018**, zaměřený na mzdy, vývoj cen potravin, reálnou kupní sílu obyvatelstva a mezinárodní srovnání HDP v Evropě.
+O projektu
 
----
+Projekt vznikl jako semestrální práce v rámci kurzu Datový analytik s Pythonem (Engeto). Cílem bylo propojit primární datovou sadu o domácí ekonomice (mzdy podle odvětví, ceny potravin) se sekundární mezinárodní datovou sadou (HDP, populace a Gini index evropských států) do jednoho konzistentního datového modelu a postavit nad ním přehledný, interaktivní a vizuálně sjednocený report.
 
-## O projektu
-Tento projekt vznikl jako analytický report pro vizualizaci ekonomických dat. Cílem bylo propojit primární datové zdroje týkající se domácí ekonomiky (mzdy, odvětví, ceny potravin) se sekundárními mezinárodními daty (HDP evropských států) a vytvořit přehledné, interaktivní a vizuálně čisté prostředí.
+Struktura reportu
 
----
+Report je rozdělen do 4 stránek propojených navigačními tlačítky:
 
-## Struktura reportu 
-Report je rozdělen do **4 stránek**:
-
-1. **Hlavní přehled ČR:** 
-   * Souhrnné KPI karty (Průměrné HDP, Průměrná cena potravin, Průměrná mzda).
-   * Dlouhodobý trend růstu mezd v porovnání s vývojem cen potravin.
-2. **Analýza mezd podle odvětví:**
-   * Vodorovný pruhový graf průměrných mezd napříč jednotlivými sektory hospodářství.
-   * Detailní vývoj mezd v čase s možností interaktivního filtrování.
-3. **Vývoj cen potravin a reálná kupní síla:**
-   * Detailní sledování průměrných cen vybraných potravinových položek.
-   * Interaktivní matice s hierarchickým rozpadem na jednotlivé roky.
-4. **Mezinárodní srovnání a pozice HDP:**
-   * Srovnání celkového HDP evropských států v přehledném žebříčku.
-
----
-
-## Použité technologie a funkce Power BI
-* **Rozsah:** 4 stránky.
-* **Typy vizuálů:** Vodorovné pruhové grafy, spojnicové grafy, maticové tabulky (Matrix), dlaždicové průřezy (Slicers) a KPI karty.
-* **Propojení tabulek:** Vytvořený datový model propojující primární česká makrodata se sekundární mezinárodní datovou sadou.
-* **Dato-modelářské prvky:** Využití kalkulovaných měr (Measures), agregací a hierarchické struktury dat (kategorie potravin / roky).
-* **Interaktivita:** Křížové filtrování (Cross-filtering/highlighting) mezi tabulkami a grafy, dynamické průřezy let.
-
----
-
-## Datové zdroje
-* **Primární tabulka:** Data o vývoji průměrných mezd podle odvětví, cenách potravin a kupní síle v ČR.
-* **Sekundární tabulka:** Makroekonomická data o celkovém HDP evropských států.
-
----
+Hlavní přehled ČR
+Multi-row karta s klíčovými metrikami (Průměrné HDP, Průměrná cena potravin, Průměrná mzda).
+Spojnicový graf dlouhodobého vývoje průměrných mezd v porovnání s cenami potravin.
+Filtrování podle roku a odvětví.
+Analýza mezd podle odvětví
+Vodorovný pruhový graf průměrných mezd napříč sektory hospodářství.
+Spojnicový graf vývoje průměrné mzdy v čase.
+Odkaz na primární zdroj dat (ČSÚ).
+Vývoj cen potravin a reálná kupní síla
+Spojnicový graf vývoje cen jednotlivých potravinových položek v letech 2006–2018.
+Tabulka s průměrnými cenami jednotlivých potravin.
+Filtrování podle roku a cenové kategorie (nad/pod průměrem), postavené na kalkulovaném sloupci.
+Mezinárodní srovnání a pozice HDP
+Vodorovný pruhový graf celkového HDP evropských států.
+Filtrování podle roku a státu.
+Datový model
+Primární tabulka – mzdy podle odvětví, ceny potravin, roky (Česká republika).
+Sekundární tabulka – HDP, populace a Gini index evropských států podle roku.
+Calendar – samostatná kalendářová dimenze propojující obě tabulky přes sloupec Year (relace 1:M, star schema), namísto přímé vazby mezi primární a sekundární tabulkou.
+Použité technologie a funkce Power BI
+Rozsah: 4 stránky.
+Typy vizuálů: vodorovné pruhové grafy, spojnicové grafy, tabulka, multi-row karta, slicery, navigační tlačítka.
+Propojení tabulek: datový model se star schématem přes kalendářovou tabulku.
+DAX:
+Measures – např. průměrná mzda, průměrná cena potravin, průměrné HDP.
+Calculated column – kategorizace cen potravin (nad/pod průměrem).
+Formátování: vlastní formát měny (Kč) u finančních metrik.
+Interaktivita: slicery pro rok, odvětví, stát a cenovou kategorii; navigace mezi stránkami pomocí tlačítek; křížové filtrování mezi vizuály.
+Datové zdroje
+Primární tabulka: vývoj průměrných mezd podle odvětví a cen potravin v ČR (ČSÚ).
+Sekundární tabulka: makroekonomická data (HDP, populace, Gini index) evropských států.
